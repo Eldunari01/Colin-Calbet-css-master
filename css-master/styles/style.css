@@ -1,0 +1,88 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header{
+    height: 100px;
+    /* Ecris à la suite */
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -20px;
+    /* Ecris à la suite */
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    height: 250px;
+    background-color: #5ee1e6;
+    /* Ecris à la suite */
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#bateau{
+    animation-duration: 8s;
+    animation-name: navigate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navigate {
+    0% {
+    transform: translate(0px, 500px) rotate(2deg) scale(50%);
+    }
+  
+    100% {
+    transform: translate(960px, 440px) rotate(10deg) scale(100%);
+    }
+}
+
+section div{
+    height : 100px;
+    width : 100px;
+    background-color:  #80CEE1;
+    transition: transform 0.5s;
+}
+
+div:nth-child(3){
+    background-color: grey;
+}
+
+section div:hover{
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    /* display: flex; */
+    background-color: black;
+}
+
+/* footer #tresor{
+    align-items: center;
+    justify-content: center;
+} */
+
+#tresor:hover{
+    cursor:grab;
+}
